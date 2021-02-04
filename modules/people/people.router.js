@@ -23,8 +23,6 @@ router.post('/', json, (req, res) => {
 });
 
 router.delete('/', json, (req, res) => {
-  // Add a new person to the queue.
-
   People.dequeue();
   res.status(200).end();
 });
